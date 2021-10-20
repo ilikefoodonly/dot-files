@@ -12,6 +12,7 @@ This is inspired by archcraft's bspwm made by adi1090x (https://github.com/adi10
 9. firefox
 10. rofi
 11. nitrogen (wallpaper setter)  
+12. networkmanager-dmenu
 # rofi
 I user archcraft's rofi becoz I am lazy to make my own and I can't program
 # polybar
