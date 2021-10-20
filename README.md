@@ -25,7 +25,7 @@ credits to : mihirlad55
 # dunst
 It is based on dracula's colorscheme
 # Where to put these files
-copy everything to the .config or
+copy everything to the .config 
 ````bash
 git clone https://github.com/ilikefoodonly/my-bspwm-config
 cp my-bspwm-config/* -r ~/.config
