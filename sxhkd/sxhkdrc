@@ -1,19 +1,12 @@
 ## Copyright (C) 2020-2021 Aditya Shakya <adi1090x@gmail.com>
-## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
 ##---------- Keybindings for bspwm ----------##
 
 # Terminal (alacritty)
 super + Return
-	bspterm
-
-# Terminal (floating)
-super + shift + Return
-	bspterm -f
-
-# Terminal (fullscreen)
-super + t
-	bspterm -s	
+	alacritty
+super + shift + enter
+       xfce4-terminal
 
 ##---------- Rofi Launcher & Menus ----------##
 
@@ -25,31 +18,20 @@ alt + F1
 super + n
 	nmd
 
-# Rofi Themes Menu
-ctrl + alt + t
-	sh ~/.config/bspwm/rofi/bin/themes
 
 # Rofi Menus/Applets
-super + {w,m,x,r,s,i}
-	sh ~/.config/bspwm/rofi/bin/{windows,mpd,powermenu,asroot,screenshot,network}
+super + {w,m,x,s,i}
+	sh ~/.config/bspwm/rofi/bin/{windows,mpd,powermenu,screenshot,network}
 
 ##---------- Applications ----------##
 
 # Launch Apps
-super + shift + {f,w,e}
-	{pcmanfm,firefox,geany}
+super + shift + {f,w,}
+	{thunar,firefox}
 
 # Terminal Apps
-ctrl + alt + {v,n,r,h,b}
-	alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e {vim,nvim,ranger,htop,bashtop}
-
-# Color Picker
-super + p
-	color-gpick
-
-# Lockscreen
-ctrl + alt + l
-    bsplock
+ctrl + alt + {v,r,h}
+	alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e {vim,ranger,htop}
 
 ##---------- System Keys ----------##
 
