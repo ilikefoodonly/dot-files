@@ -1,3 +1,5 @@
+#!/bin/bash
+
 bspc monitor -d '' '' '' '' '' '' '' ''
 bspc config border_witdh 2
 bspc config window_gap 8
