@@ -30,3 +30,4 @@ copy everything to the .config
 git clone https://github.com/ilikefoodonly/my-bspwm-config
 cp my-bspwm-config/* -r ~/.config
 ``````
+and also copy rofi file in bspwm file
