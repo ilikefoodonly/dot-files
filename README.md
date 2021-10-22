@@ -37,4 +37,6 @@ pls allow executing in .config/polybar/scripts/(cava.sh ect) ex.
 ```bash
 chmod +x .config/polybar/scripts/*
 ``````
-
+# wallpaper
+![4-nord](https://user-images.githubusercontent.com/89000017/138401248-006471f3-f275-4cb1-9e1a-60a41d2de035.png)
+credits to the how made this i dont know you sorry
