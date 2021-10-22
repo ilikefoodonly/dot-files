@@ -37,5 +37,4 @@ pls allow executing in .config/polybar/scripts/(cava.sh ect) ex.
 ```bash
 chmod +x .config/polybar/scripts/*
 ``````
-# The way the rice looks
 
