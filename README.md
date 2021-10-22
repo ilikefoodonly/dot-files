@@ -11,11 +11,9 @@ This is inspired by archcraft's bspwm made by adi1090x (https://github.com/adi10
 7. picom-jhnaburg-git (compositor)
 8. alacritty and xfce4-terminal (i have two)
 9. firefox
-10. rofi
+10. dmenu
 11. nitrogen (wallpaper setter)  
 12. networkmanager-dmenu
-# rofi
-I user archcraft's rofi becoz I am lazy to make my own and I can't program
 # polybar
 I forked archcraft's polybar
  For cava on polybar i used https://github.com/ray-pH/polybar-cava
