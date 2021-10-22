@@ -19,12 +19,12 @@ I user archcraft's rofi becoz I am lazy to make my own and I can't program
 # polybar
 I forked archcraft's polybar
  For cava on polybar i used https://github.com/ray-pH/polybar-cava
-credits to : ray-ph
+credits to : ray-ph.
 
 For spotify module i used https://github.com/mihirlad55/polybar-spotify-module
-credits to : mihirlad55
+credits to : mihirlad55.
 # dunst
-It is based on dracula's colorscheme
+It is based on dracula's colorscheme.
 # Where to put these files
 copy everything to the .config 
 ````bash
