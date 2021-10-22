@@ -20,8 +20,16 @@ super + n
 
 
 # Rofi Menus/Applets
-super + {w,m,x,s,i}
-	sh ~/.config/bspwm/rofi/bin/{windows,mpd,powermenu,screenshot,network}
+super + l
+      poweroff
+
+
+super + m 
+       reboot
+
+super + r
+      dmenu_run
+	
 
 ##---------- Applications ----------##
 
