@@ -31,3 +31,10 @@ git clone https://github.com/ilikefoodonly/my-bspwm-config
 cp my-bspwm-config/* -r ~/.config
 ``````
 and also copy rofi file in bspwm file
+# NOTE 
+pls allow executing in .config/polybar/scripts/(cava.sh ect) ex.
+```bash
+chmod +x .config/polybar/scripts/*
+``````
+# The way the rice looks
+
