@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bspc monitor -d '' '' '' '' '' '' '' ''
+bspc monitor -d '' '' '' '' '' ''
 bspc config border_witdh 2
 bspc config window_gap 8
 bspc config split_ratio .50
@@ -11,9 +11,9 @@ bspc config focus_follows_pointer true
 bspc config borderless_monocle    true
 bspc config gapless_monocle       true
 
-bspc rule -a alacritty desktop '1' follow=on focus=on
-bspc rule -a firefox desktop'2' follow=on focus=on
-bspc rule -a mpv desktop '7' follow=on focus=on
+bspc rule -a alacritty desktop '' follow=on focus=on
+bspc rule -a firefox desktop'' follow=on focus=on
+bspc rule -a mpv desktop '' follow=on focus=on
 
 killall -9 sxhkd dunst xfce4-power-manager
 
