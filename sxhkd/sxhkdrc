@@ -12,14 +12,8 @@ super + shift + enter
 
 # Rofi App Launcher
 alt + F1
-	sh ~/.config/bspwm/rofi/bin/launcher
+	rofi -show drun
 
-# Rofi Network Menu
-super + n
-	nmd
-
-
-# Rofi Menus/Applets
 super + l
       poweroff
 
@@ -36,47 +30,6 @@ super + r
 # Launch Apps
 super + shift + {f,w,}
 	{thunar,firefox}
-
-# Terminal Apps
-ctrl + alt + {v,r,h}
-	alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e {vim,ranger,htop}
-
-##---------- System Keys ----------##
-
-# Take a screenshot
-Print
-	takeshot --now
-	
-# Take screenshot in 5 second
-alt + Print	
-	takeshot --in5
-
-# Take screenshot in 10 second
-shift + Print	
-	takeshot --in10
-
-# Take screenshot of active window
-ctrl + Print
-	takeshot --win
-
-# Take screenshot of area
-ctrl + alt + Print
-	takeshot --area
-
-# Brighness control
-XF86MonBrightness{Up,Down}
-	brightness{ --inc, --dec}
-	
-# Volume control
-XF86Audio{RaiseVolume,LowerVolume}
-	volume{ --inc, --dec}
-
-XF86AudioMute
-	volume --toggle
-	
-# Music control
-XF86Audio{Next,Prev,Play,Stop}
-	mpc {next,prev,toggle,stop}
 
 ##---------- Bspwm ----------##
 
