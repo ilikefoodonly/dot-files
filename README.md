@@ -40,3 +40,4 @@ this is based on the [catppuccin](https://github.com/catppuccin/catppuccin) colo
 the same as the old one but the the compositor I use now is [picom-jonaburg-fix](https://github.com/Arian8j2/picom-jonaburg-fix)
 # Dmenu
 <a herf=""><img src="sample-pictures/2022-01-23_17-16.png" alt="" algin="right" witdh="400px"></a>
+this is how dmenu looks
