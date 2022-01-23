@@ -6,14 +6,16 @@ This is inspired by archcraft's bspwm made by adi1090x (https://github.com/adi10
 2. sxhkd , bspwm (main and you should know that)
 3. polybar-spotify-module (in polybar for spotify)
 4. mpd , cava , mpv(audio, audio visualizer to fell greater than windows users)
-5. otf-feather , ttf-font-awesome , ttf-iosevka-nerd (fonts)
+5. otf-feather , ttf-font-awesome , ttf-iosevka-nerd and tolgaite(fonts)
 6. dunst (notification dameon)
 7. picom-jhnaburg-git (compositor)
-8. alacritty and xfce4-terminal (i have two)
+8. alacritty
 9. firefox
 10. dmenu
 11. nitrogen (wallpaper setter)  
 12. networkmanager-dmenu
+<div algin="center">
+ 
 # polybar
 I forked archcraft's polybar
  For cava on polybar i used https://github.com/ray-pH/polybar-cava
