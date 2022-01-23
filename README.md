@@ -23,21 +23,18 @@ For spotify module i used https://github.com/mihirlad55/polybar-spotify-module
 credits to : mihirlad55.
 # dunst
 It is based on dracula's colorscheme.
-# Where to put these files
-copy everything to the .config 
-````bash
-git clone https://github.com/ilikefoodonly/dot-files/(the on you want)
-cp dot-files/* -r ~/.config
-``````
+
 # NOTE 
 pls allow executing in .config/polybar/scripts/(cava.sh ect) ex.
 ```bash
 chmod +x .config/polybar/scripts/*
 ``````
 # wallpaper
-![4-nord](https://user-images.githubusercontent.com/89000017/138401248-006471f3-f275-4cb1-9e1a-60a41d2de035.png)
-credits to the one made this. 
+credits to the one who made it
 sorry i don't know the one who made this
 
 # New bspwm Config
-this is based on the [catppuccin](https://github.com/catppuccin/catppuccin) color scheme
+this is based on the [catppuccin](https://github.com/catppuccin/catppuccin) color scheme. It is really good and I recommened it 
+![2022-01-23_15-03](https://user-images.githubusercontent.com/89000017/150676765-8c472be8-aab7-40bf-a469-c1507ab102fd.png) 
+# prequisite
+the same as the old one but the the compositor I use now is [picom-jonaburg-fix](https://github.com/Arian8j2/picom-jonaburg-fix)
