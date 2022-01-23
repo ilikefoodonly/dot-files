@@ -1,0 +1,362 @@
+; ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗ 
+; ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+; ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+; ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+; ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+; ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+                                                       
+
+;;--------------by:ilikefoodonly----------------;;;
+
+;    ____ ___  _     ___  ____  ____  
+;   / ___/ _ \| |   / _ \|  _ \/ ___| 
+;  | |  | | | | |  | | | | |_) \___ \ 
+;  | |__| |_| | |__| |_| |  _ < ___) |
+;   \____\___/|_____\___/|_| \_\____/ 
+                                    
+[colors]
+background-alt  = #3E4058
+background      = #2D293B
+foreground      = #6E6C7C
+foreground-alt  = #282e3a
+
+flamin  = #ECBFBD
+red     = #E28C8C
+yellow  = #EADDA0
+green   = #B3E1A3
+orange  = #F7C196
+magenta = #C6AAE8
+white   = #D7DAE0
+pink    = #F0AFE1
+blue    = #A4B9EF
+teal    = #9DDDCB
+
+;;----------------BAR-MAIN---------------------------;;
+
+[bar/main]
+enable-ipc = true
+
+width = 14%
+height = 20
+radius = 0
+fixed-center = false
+offset-x = .6%
+offset-y = 8
+#bottom = true
+bottom = false
+
+background = ${colors.foreground-alt}
+foreground = ${colors.background-alt}
+
+padding-left = 0
+padding-right = 0
+
+border-size = 3
+border-color = ${colors.background} 
+
+module-margin-left  = 1
+module-margin-right = 1
+
+font-0 = "Iosevka Nerd Font:size=9;4"
+font-1 = "feather:size=9;3"
+font-2 = "Font Awesome 5 Free:size=9;4"
+font-3 = "Togalite medium:pixelsize="9;4"
+
+modules-left =   bspwm 
+modules-center =  
+modules-right =   
+
+cursor-click = pointer
+cursor-scroll = pointer
+
+line-size = 2
+
+separator =
+;;---------BAR-MUSIC------------;;
+[bar/music]
+enable-ipc = true
+
+width = 20%
+height = 20
+fixed-center = ture
+offset-x = 40%
+offset-y = 8 
+#bottom = true
+bottom = flase
+
+background = ${colors.foreground-alt}
+foreground = ${colors.background-alt}
+
+padding-left = 0
+padding-right = 0
+
+border-size = 3
+border-color = ${colors.background}
+
+module-margin-left  = 1
+module-margin-right = 1
+
+font-0 = "Iosevka Nerd Font:size=10;4"
+font-1 = "feather:size=12;3"
+font-2 = "Font Awesome 5 Free:size=10;1"
+font-3 = "Togalite medium:pixelsize=12;4"
+
+modules-left = spotify previous playpause next
+
+cursor-click = pointer
+cursor-scroll = pointer
+
+separator =
+;;----------BAR-EXTRA-----------------;;
+[bar/extra]
+enable-ipc = true
+width = 18.65%
+height = 20
+radius = 0
+offset-x = 80%
+offset-y = 8
+fixed-center = false
+#bottom = true
+bottom = false
+
+background = ${colors.foreground-alt}
+foreground = ${colors.background-alt}
+
+padding-left = 0
+padding-right = 0
+
+border-size = 3
+border-color = ${colors.background}
+
+module-margin-left  = 0
+module-margin-right = .1
+
+font-0 = "Iosevka Nerd Font:size=10;4"
+font-1 = "feather:size=12;3"
+font-2 = "Font Awesome 5 Free:size=10;1"
+
+modules-left = cpu memory volume date battery
+
+cursor-click = pointer
+cursor-scroll = pointer
+
+line-size = 2
+
+separator = 
+
+tray-size = 2
+;;-----------------BAR-XWINDOW-------------------------;;
+[bar/xwindow]
+enable-ipc = true
+
+width = 15%
+height = 20
+radius = 0
+offset-x = 15%
+offset-y = 8
+fixed-center = false
+#bottom = true
+bottom = false
+
+background = ${colors.foreground-alt}
+foreground = ${colors.background-alt}
+
+padding-left = 0
+padding-right = 0
+
+border-size = 3
+border-color = ${colors.background}
+
+module-margin-left  = 0
+module-margin-right = .1
+
+font-0 = "Iosevka Nerd Font:size=10;4"
+font-1 = "feather:size=12;3"
+font-2 = "Font Awesome 5 Free:size=10;1"
+
+modules-left = xwindow
+
+cursor-click = pointer
+cursor-scroll = pointer
+
+line-size = 2
+separator = 
+;;-----------------MODULES------------------------;;
+;;-----------------BSPWM-------------------;;
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = "%name%"
+label-focused-foreground = ${colors.pink}
+label-focused-padding = 2
+
+label-occupied = %name%
+label-occupied-foreground = ${colors.magenta}
+label-occupied-padding = 2
+
+label-urgent = %name%
+label-urgent-foreground = ${colors.red}
+label-urgent-padding = 2
+
+label-empty = %name% 
+label-empty-foreground = ${colors.yellow}
+label-empty-padding = 2
+
+label-separator = 
+;;----------------kernel-name-----------------------;;
+[module/kernel-name]
+type = custom/script
+exec = uname -r
+interval = 10000
+label = "    %output% "
+format-background = ${colors.teal}
+format-foreground = ${colors.foreground-alt}
+
+;;--------------------xwindow----------------------;;
+[module/xwindow]
+type = internal/xwindow
+format = <label>
+format-foreground = ${colors.pink}
+format-padding = 1
+label = "  %title%"
+label-maxlen = 25
+label-empty = "   free (ARCH < GENTOO)"
+label-separator = " "
+label-empty-foreground = ${colors.pink}
+;;----------------------volume---------------------;;
+[module/volume]
+type = internal/pulseaudio
+format-volume =  "<ramp-volume> <label-volume>"
+ramp-volume-0 =   
+ramp-volume-0-font = 1
+ramp-volume-1 =  墳
+ramp-volume-1-font = 1
+ramp-volume-2 = 墳
+ramp-volume-2-font = 1
+format-volume-foreground = ${colors.blue}
+format-volume-padding = 1
+
+format-muted = <label-muted>
+format-muted-foreground = ${colors.red}
+label-muted =  奄 muted 
+format-muted-font = 2
+;;----------------BATTERTY------------------------;;
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP0
+full-at = 100
+
+format-charging = <label-charging>
+format-charging-prefix = 
+format-charging-prefix-font = 2
+label-charging = "%percentage%%  " 
+
+format-discharging = <label-discharging>
+label-discharging = "%percentage%% "
+format-discharging-prefix = 
+format-discharging-prefix-font = 2
+
+format-discharging-foreground = ${colors.red}
+format-discharging-underline  = ${colors.red}
+format-charging-foreground    = ${colors.orange}
+format-charging-underline     = ${colors.orange}
+
+label-full =  
+format-full-foreground = ${colors.green}
+format-full-underline  = ${colors.green}
+format-full-prefix-font = 1
+;;-----------------NETWORK-----------------------;;
+[module/network]
+type = internal/network
+interface = wlp3s0
+format-connected = <label-connected>
+format-connected-prefix-font = 2
+label-connected = "   %essid% "
+label-connected-font = 1
+
+format-disconnected = <label-disconnected>
+label-disconnected = 
+label-disconnected-font = 2
+
+format-connected-foreground = ${colors.green}
+
+format-disconnected-foreground = ${colors.yellow}
+;;----------------MEMORY-------------------------;;
+[module/memory]
+type = internal/memory
+interval = 3
+
+label = "    %percentage_used%%  "
+
+format-prefix-padding = 2
+format-prefix-font = 2
+format-foreground = ${colors.magenta}
+;;--------------------CPU---------------------------;;
+[module/cpu]
+type = internal/cpu
+
+interval = 1
+format = <label>
+label = "   %percentage%% "
+
+format-foreground = ${colors.pink}
+;;-------------------DATE-----------------------;;
+[module/date]
+type = internal/date
+interval = 1
+
+time = "   %H:%M  "
+time-alt =  " 﨟 %b %d "
+
+format-prefix-padding = 1
+format-prefix-font = 1
+format-foreground = ${colors.orange}
+
+label = %time% 
+;;------------------PREVIOUS-SPOTIFY----------------;;
+[module/previous]
+type = custom/ipc
+format-font = 2
+hook-0 = echo ""
+hook-1 = echo "玲"
+click-left = "spotifyctl -q previous"
+format-foreground = ${colors.flamin}
+;;------------------NEXT-SPOTIFY-------------------;;
+[module/next]
+type = custom/ipc
+format-font = 2
+hook-0 = echo ""
+hook-1 = echo "怜"
+click-left = "spotifyctl -q next"
+format-foreground = ${colors.flamin}
+;;--------------PLAYPAUSE-SPOTIFY-------------------;;
+[module/playpause]
+type = custom/ipc
+format-font = 2
+hook-0 = echo ""
+hook-1 = echo ""
+hook-2 = echo ""
+click-left = "spotifyctl -q playpause"
+format-foreground = ${colors.yellow}
+;;---------------SPOTIFY----------------;;
+[module/spotify]
+type = custom/ipc
+hook-0 = 
+format-prefix = " "
+hook-1 =  spotifyctl status --format '%artist%: %title%' --max-length 25 --max-title-length 15 --max-artist-length 10 --trunc '...' 
+format-foreground = ${colors.white}
+;;--------------------------SETTINGS----------------------------------------------;;
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+pseudo-transparency = true
+
+[global/wm]
+;margin-top = 5
+;margin-bottom = 5
+
+; vim:ft=dosini
