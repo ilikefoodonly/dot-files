@@ -36,5 +36,5 @@ sorry i don't know the one who made this
 # New bspwm Config
 this is based on the [catppuccin](https://github.com/catppuccin/catppuccin) color scheme. It is really good and I recommened it 
 ![2022-01-23_15-03](https://user-images.githubusercontent.com/89000017/150676765-8c472be8-aab7-40bf-a469-c1507ab102fd.png) 
-# prequisite
+#  Chages 
 the same as the old one but the the compositor I use now is [picom-jonaburg-fix](https://github.com/Arian8j2/picom-jonaburg-fix)
