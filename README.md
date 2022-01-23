@@ -26,7 +26,7 @@ It is based on dracula's colorscheme.
 # Where to put these files
 copy everything to the .config 
 ````bash
-git clone https://github.com/ilikefoodonly/dot-files
+git clone https://github.com/ilikefoodonly/dot-files/(the on you want)
 cp dot-files/* -r ~/.config
 ``````
 # NOTE 
