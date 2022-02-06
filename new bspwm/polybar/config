@@ -258,13 +258,10 @@ format-discharging-prefix = 
 format-discharging-prefix-font = 2
 
 format-discharging-foreground = ${colors.red}
-format-discharging-underline  = ${colors.red}
 format-charging-foreground    = ${colors.orange}
-format-charging-underline     = ${colors.orange}
 
 label-full =  
 format-full-foreground = ${colors.green}
-format-full-underline  = ${colors.green}
 format-full-prefix-font = 1
 ;;-----------------NETWORK-----------------------;;
 [module/network]
